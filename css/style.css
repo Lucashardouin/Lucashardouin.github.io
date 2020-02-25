@@ -1,0 +1,210 @@
+body{
+
+    margin:0 ;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+hr{
+    outline: none;
+    border: none;
+}
+
+h1, h2, h3{
+    margin: 0 auto;
+    text-indent: 0px;
+}
+
+
+
+.index_menu_container{
+    background: rgb(0, 183, 255);
+
+
+    display: flex ;
+
+    font-size: 1.5rem;
+}
+
+.index_menu_container .index_menu_left .photo{
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.index_menu_container .index_menu_left .photo img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border-radius: 99px;
+}
+
+.contact{
+    width: 100%;
+    height: 70px;
+    background-color: #404040;
+    color: #FECA08;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.contenu_contact{
+    width: 100%;
+    height: 500px;
+    white-space: pre-line;
+}
+
+.liste_1{
+    margin: 0 auto;
+}
+
+.liste_1 li{
+    list-style: none;
+}
+
+.a_propos_de_moi{
+    width: 100%;
+    height: 70px;
+    background-color: #404040;
+    color: #FECA08;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 35px;
+}
+
+.contenu_a_propos_de_moi{
+    width: 100%;
+    height: 700px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loisirs{
+    width: 100%;
+    height: 70px;
+    background-color: #404040;
+    color: #FECA08;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 35px;
+}
+
+.contenu_loisirs{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: ;
+}
+
+.fa-swimmer {
+    width: 50px;
+    padding-left: 50px;
+}
+
+.fa-biking{
+
+}
+
+.fa-table-tennis{
+    padding-right: 50px;
+}
+
+.index_menu_left{
+    height: 2000px;
+    width: 30%;
+    background: #FECA08;
+    color: black;
+    justify-content: center;
+
+}
+.index_menu_right{
+    height: 2000px;
+    width: 70%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.index_menu_right .presentation{
+    width: 100%;
+    height: 230px;
+    padding:70px 120px 0px 120px;
+    top: 0px;
+}
+
+
+#prenom{
+    color: #FECA08;
+    font-size: 55px;
+}
+
+#nom{
+    color: black;
+    font-size: 55px;
+}
+
+#metier{
+    font-size: 35px;
+}
+
+.index_menu_right .presentation hr{
+    width: 150px;
+    background-color: #FECA08;
+    height: 2px;
+    position: absolute;
+}
+
+
+
+.formation{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-left: 85px;
+    padding-top: 50px;
+}
+
+.formation hr{
+    height: 2px;
+    background-color: #FECA08;
+    width: 900px;
+}
+
+.formation img{
+    width: 30px;
+    display: flex;
+    padding-right: 10px;
+    height: 30px;
+}
+
+.experience_professionnelle{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-left: 85px;
+    padding-top: 90px;
+}
+
+.experience_professionnelle hr{
+    height: 2px;
+    background-color: #FECA08;
+    width: 900px;
+}
+
+.fa-briefcase{
+    padding-right: 10px;
+}
+
+td{
+    width: 35%;
+    padding-left: 110px;
+    padding-top: 0px;
+}
