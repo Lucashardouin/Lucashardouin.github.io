@@ -37,7 +37,6 @@ h3 {
 .index_menu_container .index_menu_left .photo img{
     width: 150px;
     height: 150px;
-    display: flex;
     border-radius: 99px;
 }
 
@@ -97,6 +96,7 @@ h3 {
     height: 250px;
     justify-content: space-between;
     align-items: center;
+    background-color: #FECA08;
 }
 
 .fa-swimmer {
@@ -208,7 +208,13 @@ td{
 @media all and (max-width: 1450px)
 {
     .a_propos_de_moi{
-        height: 110px;
+        font-size: 25px;
+    }
+    .contact{
+        font-size: 25px;
+    }
+    .loisirs{
+        font-size: 25px;
     }
 }
 
@@ -232,18 +238,62 @@ td{
     }
     .formation{
         padding-left: 0px;
+        font-size: 20px;
     }
     td{
         padding-left: 0px;
+        font-size: 17px;
     }
     .liste_1{
         padding-left: 0px;
+        font-size: 17px;
     }
     .experience_professionnelle{
         padding-left: 0px;
+        font-size: 25px;
     }
-    .presentation{
-        padding: 0px;
-        display: initial;
+    #prenom{
+        font-size: 35px;
+    }
+    #nom{
+        font-size: 35px;
+    }
+    #metier{
+        font-size: 25px;
+    }
+    .contenu_formation{
+        font-size: 20px;
+    }
+    .contenu_a_propos_de_moi{
+        font-size: 20px;
+    }
+    .contact{
+        font-size: 20px;
+    }
+    .a_propos_de_moi{
+        font-size: 20px;
+    }
+    .loisirs{
+        font-size: 20px;
+    }
+    .contenu_loisirs{
+        flex-direction: column;
+    }
+    .index_menu_container .index_menu_left .photo img{
+        width: 100px;
+        height: 100px;
+        border-radius: 99px;
+    }
+}
+@media all and (max-width: 980px)
+{
+    #prenom{
+        font-size: 25px;
+    }
+    #nom{
+        font-size: 25px;
+    }
+    #metier{
+        font-size: 20px;
     }
 }
