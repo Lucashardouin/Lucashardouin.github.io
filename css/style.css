@@ -227,7 +227,13 @@ td{
         width: 50%;
     }
 }
+@media all and (max-width: 1250px)
+{
+    td{
+        padding-left: 0px;
+    }
 
+}
 @media all and (max-width: 980px)
 {
     .index_menu_left{
@@ -243,9 +249,10 @@ td{
     td{
         padding-left: 0px;
         font-size: 17px;
+        width: 10%;
     }
     .liste_1{
-        padding-left: 0px;
+        padding-left: 5px;
         font-size: 17px;
     }
     .experience_professionnelle{
@@ -253,13 +260,13 @@ td{
         font-size: 25px;
     }
     #prenom{
-        font-size: 35px;
+        font-size: 25px;
     }
     #nom{
-        font-size: 35px;
+        font-size: 25px;
     }
     #metier{
-        font-size: 25px;
+        font-size: 20px;
     }
     .contenu_formation{
         font-size: 20px;
@@ -284,16 +291,10 @@ td{
         height: 100px;
         border-radius: 99px;
     }
-}
-@media all and (max-width: 980px)
-{
-    #prenom{
-        font-size: 25px;
+    .index_menu_container{
+        width: auto;
     }
-    #nom{
-        font-size: 25px;
-    }
-    #metier{
-        font-size: 20px;
+    .index_menu_right .formation hr{
+        width: auto;
     }
 }
