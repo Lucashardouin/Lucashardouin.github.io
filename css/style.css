@@ -22,7 +22,7 @@ h5 {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 1em 0;
-    color: darkgray;
+    color: black;
 }
 
 h5 {
@@ -35,6 +35,22 @@ h5 {
 
 .ville {
     padding-top: 1em;
+}
+
+.poste_2{
+    padding-top: 1em;
+}
+
+.poste_3 {
+    padding-top: 1em;
+}
+
+.metier_2 h4 {
+    margin-top: 1em;
+}
+
+.metier_3 h4 {
+    margin-top: 1em;
 }
 
 .index_menu_container{
@@ -219,6 +235,16 @@ h5 {
     padding-top: 15px;
 }
 
+.fa-dot-circle {
+    font-size: 0.7em;
+    margin-top: 8px;
+}
+
+.fa-circle {
+    font-size: 0.4em;
+}
+
+
 .experience_professionnelle{
     height: 70px;
     display: flex;
@@ -240,9 +266,17 @@ h5 {
     padding-top: 22px;
 }
 
+.contenu_experience_professionnelle .fa-dot-circle {
+    font-size: 0.7em;
+    margin-top: 1000px;
+    margin-left: 85px;
+    position: absolute;
+}
+
 table {
-    padding-left: 85px;
+    margin-left: 110px;
     padding-top: 0;
+    position: relative;
 }
 
 tr td:first-child {
