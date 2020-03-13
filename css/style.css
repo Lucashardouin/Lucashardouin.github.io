@@ -17,13 +17,30 @@ h3 {
     margin: 0 auto 0 0.2em;
 }
 
+h4,
+h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+    color: darkgray;
+}
 
+h5 {
+    text-transform: initial;
+}
+
+.lycee h4{
+    margin-top: 1em;
+}
+
+.ville {
+    padding-top: 1em;
+}
 
 .index_menu_container{
     background: rgb(0, 183, 255);
-
     display: flex ;
-
+    flex-direction: row;
     font-size: 1.5rem;
 }
 
@@ -41,7 +58,6 @@ h3 {
 }
 
 .contact{
-
     height: 70px;
     background-color: #404040;
     color: #FECA08;
@@ -99,31 +115,52 @@ h3 {
     background-color: #FECA08;
 }
 
+.fas {
+    color: #404040;
+
+}
+
+.yellow {
+    color: #FECA08;
+}
 .fa-swimmer {
     top: 100px;
-    padding-left: 50px;
+    margin-left: 50px;
     font-size: 70px;
-    display: flex;
+    border: 2px solid #404040 ;
+    border-radius: 50%;
+    line-height: 80px;
+    width: 80px;
+    overflow: hidden;
 }
 
-.fa-biking{
-    font-size: 70px;
+.fa-biking {
+    font-size: 65px;
+    border: 2px solid #404040 ;
+    border-radius: 50%;
+    line-height: 80px;
+    width: 80px;
+    overflow: hidden;
 }
 
-.fa-table-tennis{
-    padding-right: 50px;
+.fa-table-tennis {
+    margin-right: 50px;
     font-size: 70px;
+    border: 2px solid #404040 ;
+    border-radius: 50%;
+    line-height: 80px;
+    width: 80px;
+    overflow: hidden;
 }
 
-.index_menu_left{
+.index_menu_left {
     height: 2000px;
     width: 30%;
     background: #FECA08;
     color: black;
     justify-content: center;
-
 }
-.index_menu_right{
+.index_menu_right {
     height: 2000px;
     width: 70%;
     background: white;
@@ -157,53 +194,99 @@ h3 {
     background-color: #FECA08;
     height: 2px;
     position: absolute;
+    margin-top: 0px;
 }
 
 
 
 .formation{
-    height: 70px;
+    height: 50px;
     display: flex;
-    padding-left: 85px;
+    margin-left: 85px;
     padding-top: 50px;
+    border-bottom: 2px solid #FECA08;
+    margin-bottom: 1em;
 }
 
-.formation hr{
-    height: 2px;
-    background-color: #FECA08;
-    width: 900px;
+.formation i {
+    font-size: 2em;
 }
 
-
-.formation img{
-    width: 30px;
+.formation h3 {
+    margin-left: 1em;
+    text-align: center;
     display: flex;
-    padding-right: 10px;
-    height: 30px;
+    padding-top: 15px;
 }
 
 .experience_professionnelle{
     height: 70px;
     display: flex;
-    padding-left: 85px;
+    margin-left: 85px;
     padding-top: 90px;
+    border-bottom: 2px solid #FECA08;
+    margin-bottom: 1em;
 }
 
-.experience_professionnelle hr{
-    height: 2px;
-    background-color: #FECA08;
-    width: auto;
+.experience_professionnelle h3 {
+    margin-left: 1em;
+    text-align: center;
+    display: flex;
+    padding-top: 35px;
 }
 
-.fa-briefcase{
-    padding-right: 10px;
+.experience_professionnelle i {
+    font-size: 2em;
+    padding-top: 22px;
 }
 
-td{
-    width: 35%;
-    padding-left: 110px;
-    padding-top: 0px;
+table {
+    padding-left: 85px;
+    padding-top: 0;
 }
+
+tr td:first-child {
+    width: 20%;
+    vertical-align: top;
+}
+
+tr td:last-child {
+    width: 80%;
+}
+
+.recommandations {
+    display: flex;
+    height: 70px;
+    margin-left: 85px;
+    padding-top: 90px;
+    border-bottom: 2px solid #FECA08;
+    margin-bottom: 1em;
+}
+
+.recommandations h3 {
+    margin-left: 1em;
+    text-align: center;
+    display: flex;
+    padding-top: 35px;
+}
+
+.recommandations i {
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+.contenu_recommandations {
+    line-height: 140%;
+}
+
+.contenu_recommandations tr td:first-child{
+    width: 50%;
+}
+
+.contenu_recommandations tr td:last-child{
+    width: 50%;
+}
+
 
 @media all and (max-width: 1450px)
 {
@@ -218,15 +301,8 @@ td{
     }
 }
 
-@media all and (max-device-width: 480px)
-{
-    .index_menu_left{
-        width: 50%;
-    }
-    .index_menu_right{
-        width: 50%;
-    }
-}
+
+
 @media all and (max-width: 1250px)
 {
     td{
@@ -296,5 +372,32 @@ td{
     }
     .index_menu_right .formation hr{
         width: auto;
+    }
+}
+
+@media only screen 
+    and (max-width: 480px) {
+    .index_menu_container {
+        flex-direction: column;
+    }
+
+    .index_menu_left,
+    .index_menu_right {
+        width: 100%;
+
+    }
+
+    .formation{
+        margin-left: 5px;
+        padding-top: 5px;
+        margin-bottom: 0.5em;
+    }
+    
+    .formation i {
+        font-size: 1.5em;
+    }
+    
+    .formation h3 {
+        margin-left: 1em;
     }
 }
