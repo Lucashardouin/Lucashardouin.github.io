@@ -1,79 +1,78 @@
-body{
+body {
 
     margin:0 ;
     font-family: 'ZCOOL XiaoWei', serif;
 }
 
-hr{
+hr {
     outline: none;
     border: none;
 }
 
-h1, h2 {
+h1, h2  {
     margin: 0 auto;
 }
 
-h3 {
+h3  {
     margin: 0 auto 0 0.2em;
 }
 
 h4,
-h5 {
+h5  {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 1em 0;
     color: black;
 }
 
-h5 {
+h5  {
     text-transform: initial;
 }
 
-.lycee h4{
-    margin-top: 1em;
-}
-
-.ville {
-    padding-top: 1em;
-}
-
-.poste_2{
-    padding-top: 1em;
-}
-
-.poste_3 {
-    padding-top: 1em;
-}
-
-.metier_2 h4 {
-    margin-top: 1em;
-}
-
-.metier_3 h4 {
-    margin-top: 1em;
-}
-
-.index_menu_container{
-    background: rgb(0, 183, 255);
+.index_menu_container {
     display: flex ;
-    flex-direction: row;
     font-size: 1.5rem;
 }
 
-.index_menu_container .index_menu_left .photo{
+.index_menu_left {
+    height: 2000px;
+    width: 30%;
+    background: #FECA08;
+    color: black;
+    justify-content: center;
+}
+
+.index_menu_right {
+    height: 2000px;
+    width: 70%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cell_1 {
+    padding-top: 1em;
+}
+
+.cell_2 h4 {
+    margin-top: 1em;
+}
+
+.index_menu_container .index_menu_left .photo {
     height: 300px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.index_menu_container .index_menu_left .photo img{
-    width: 150px;
-    height: 150px;
+.index_menu_container .index_menu_left .photo img {
+    width: 200px;
+    height: 200px;
     border-radius: 99px;
 }
 
-.contact{
+.contact {
     height: 70px;
     background-color: #404040;
     color: #FECA08;
@@ -83,20 +82,20 @@ h5 {
     font-size: 35px;
 }
 
-.contenu_contact{
+.contenu_contact {
     height: 500px;
     white-space: pre-line;
 }
 
-.liste_1{
+.liste_1 {
     margin: 0 auto;
 }
 
-.liste_1 li{
+.liste_1 li {
     list-style: none;
 }
 
-.a_propos_de_moi{
+.a_propos_de_moi {
     height: 70px;
     background-color: #404040;
     color: #FECA08;
@@ -106,14 +105,14 @@ h5 {
     font-size: 35px;
 }
 
-.contenu_a_propos_de_moi{
+.contenu_a_propos_de_moi {
     height: 700px;
     padding: 20px;
     justify-content: center;
     align-items: center;
 }
 
-.loisirs{
+.loisirs {
     height: 70px;
     background-color: #404040;
     color: #FECA08;
@@ -123,7 +122,7 @@ h5 {
     font-size: 35px;
 }
 
-.contenu_loisirs{
+.contenu_loisirs {
     display: flex;
     height: 250px;
     justify-content: space-between;
@@ -139,6 +138,7 @@ h5 {
 .yellow {
     color: #FECA08;
 }
+
 .fa-swimmer {
     top: 100px;
     margin-left: 50px;
@@ -169,43 +169,27 @@ h5 {
     overflow: hidden;
 }
 
-.index_menu_left {
-    height: 2000px;
-    width: 30%;
-    background: #FECA08;
-    color: black;
-    justify-content: center;
-}
-.index_menu_right {
-    height: 2000px;
-    width: 70%;
-    background: white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-}
-
-.index_menu_right .presentation{
+.index_menu_right .presentation {
     height: 230px;
     padding:70px 120px 0px 120px;
 }
 
 
-#prenom{
+#prenom {
     color: #FECA08;
     font-size: 55px;
 }
 
-#nom{
+#nom {
     color: black;
     font-size: 55px;
 }
 
-#metier{
+#metier {
     font-size: 35px;
 }
 
-.index_menu_right .presentation hr{
+.index_menu_right .presentation hr {
     width: 150px;
     background-color: #FECA08;
     height: 2px;
@@ -215,7 +199,7 @@ h5 {
 
 
 
-.formation{
+.formation {
     height: 50px;
     display: flex;
     margin-left: 85px;
@@ -245,7 +229,7 @@ h5 {
 }
 
 
-.experience_professionnelle{
+.experience_professionnelle {
     height: 70px;
     display: flex;
     margin-left: 85px;
@@ -266,26 +250,28 @@ h5 {
     padding-top: 22px;
 }
 
-.contenu_experience_professionnelle .fa-dot-circle {
-    font-size: 0.7em;
-    margin-top: 1000px;
-    margin-left: 85px;
-    position: absolute;
+table {
+    margin-left: 100px;
+    padding-top: 0;
 }
 
-table {
-    margin-left: 110px;
-    padding-top: 0;
-    position: relative;
+table td {
+    padding: 15px 0;
 }
 
 tr td:first-child {
-    width: 20%;
+    width: 4%;
+    vertical-align: top;
+}
+
+tr td:nth-child(2n) {
+    width: 15%;
     vertical-align: top;
 }
 
 tr td:last-child {
-    width: 80%;
+    width: 81%;
+    vertical-align: top;
 }
 
 .recommandations {
@@ -299,8 +285,6 @@ tr td:last-child {
 
 .recommandations h3 {
     margin-left: 1em;
-    text-align: center;
-    display: flex;
     padding-top: 35px;
 }
 
@@ -313,125 +297,154 @@ tr td:last-child {
     line-height: 140%;
 }
 
-.contenu_recommandations tr td:first-child{
+.contenu_recommandations tr td:first-child {
     width: 50%;
 }
 
-.contenu_recommandations tr td:last-child{
+.contenu_recommandations tr td:last-child {
     width: 50%;
 }
 
+/* tablette mode paysage */
 
-@media all and (max-width: 1450px)
-{
-    .a_propos_de_moi{
-        font-size: 25px;
+@media only screen
+    and (max-width: 1024px) {
+    .index_menu_left,
+    .index_menu_right {
+        height: 2050px;
     }
-    .contact{
-        font-size: 25px;
-    }
-    .loisirs{
-        font-size: 25px;
-    }
-}
-
-
-
-@media all and (max-width: 1250px)
-{
-    td{
-        padding-left: 0px;
-    }
-
-}
-@media all and (max-width: 980px)
-{
-    .index_menu_left{
-        width: 40%;
-    }
-    .index_menu_right{
-        width: 60%;
-    }
-    .formation{
-        padding-left: 0px;
+    .a_propos_de_moi {
         font-size: 20px;
     }
-    td{
+    .contact {
+        font-size: 25px;
+    }
+    .liste_1 {
+        padding-left: 20px;
+    }
+    .loisirs {
+        font-size: 25px;
+    }
+    .formation {
+        margin-left: 10px;
+    }
+    .experience_professionnelle {
+        margin-left: 10px;
+    }
+    .recommandations {
+        margin-left: 10px;
+    }
+    table {
+        margin-left: 10px;
+        width: 90%;
+    }
+}
+
+/* tablette mode portrait */
+
+@media only screen
+    and (max-width: 768px) {
+    .index_menu_left {
+        width: 30%;
+    }
+    .index_menu_right {
+        width: 70%;
+    }
+    .formation {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    td {
         padding-left: 0px;
         font-size: 17px;
-        width: 10%;
     }
-    .liste_1{
+    table {
+        margin-left: 10px;
+    }
+    .liste_1 {
         padding-left: 5px;
         font-size: 17px;
     }
-    .experience_professionnelle{
-        padding-left: 0px;
+    .experience_professionnelle {
+        margin-left: 10px;
         font-size: 25px;
     }
-    #prenom{
+    .index_menu_right .presentation {
+        padding-left: 10px;
+    }
+    #prenom,
+    #nom {
         font-size: 25px;
     }
-    #nom{
-        font-size: 25px;
-    }
-    #metier{
+    #metier,
+    .contenu_a_propos_de_moi,
+    .contact,
+    .a_propos_de_moi,
+    .loisirs {
         font-size: 20px;
     }
-    .contenu_formation{
-        font-size: 20px;
+    .recommandations{
+        margin-left: 10px;
     }
-    .contenu_a_propos_de_moi{
-        font-size: 20px;
-    }
-    .contact{
-        font-size: 20px;
-    }
-    .a_propos_de_moi{
-        font-size: 20px;
-    }
-    .loisirs{
-        font-size: 20px;
-    }
-    .contenu_loisirs{
+    .contenu_loisirs {
         flex-direction: column;
     }
-    .index_menu_container .index_menu_left .photo img{
-        width: 100px;
-        height: 100px;
-        border-radius: 99px;
-    }
-    .index_menu_container{
-        width: auto;
-    }
-    .index_menu_right .formation hr{
-        width: auto;
+    .index_menu_container .index_menu_left .photo img {
+        width: 150px;
+        height: 150px;
     }
 }
 
+/* mobile portrait */
+
 @media only screen 
-    and (max-width: 480px) {
-    .index_menu_container {
+    and (max-width: 480px)  {
+    .index_menu_container  {
         flex-direction: column;
     }
-
-    .index_menu_left,
+    .index_menu_left {
+        width: 100%;
+        height: 90%;
+    }
     .index_menu_right {
         width: 100%;
-
     }
-
-    .formation{
+    .contenu_a_propos_de_moi {
+        height: 100%;
+    }
+    .contenu_loisirs {
+        height: 10%;
+    }
+    .formation {
         margin-left: 5px;
         padding-top: 5px;
         margin-bottom: 0.5em;
     }
-    
-    .formation i {
+    .formation i  {
         font-size: 1.5em;
+        height: 50%;
+        padding-top: 10px;
     }
-    
-    .formation h3 {
+    .formation h3  {
         margin-left: 1em;
+    }
+    td {
+        font-size: 15px;
+    }
+    table {
+        margin-left: 5px;
+        width: 90%;
+    }
+    .experience_professionnelle h3 {
+        height: 100%;
+    }
+    .experience_professionnelle {
+        height: 5%;
+        margin-bottom: 0px;
+    }
+    .experience_professionnelle i {
+        height: 50%;
+        font-size: 1.5em;
+        padding-top: 50px;
     }
 }
