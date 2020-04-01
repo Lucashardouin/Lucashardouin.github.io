@@ -1,5 +1,4 @@
 body {
-
     margin:0 ;
     font-family: 'ZCOOL XiaoWei', serif;
 }
@@ -65,16 +64,6 @@ h5  {
     border-radius: 99px;
 }
 
-.contact {
-    height: 70px;
-    background-color: #404040;
-    color: #FECA08;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-}
-
 .contenu_contact {
     height: 500px;
     white-space: pre-line;
@@ -103,16 +92,6 @@ h5  {
     padding: 20px;
     justify-content: center;
     align-items: center;
-}
-
-.loisirs {
-    height: 70px;
-    background-color: #404040;
-    color: #FECA08;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 35px;
 }
 
 .contenu_loisirs {
@@ -247,10 +226,6 @@ tr td:last-child {
         height: 2050px;
     }
 
-    .a_propos_de_moi {
-        font-size: 20px;
-    }
-
     .index_menu_left h2 {
         font-size: 25px;
     }
@@ -315,8 +290,7 @@ tr td:last-child {
         font-size: 25px;
     }
 
-    .index_menu_left h2,
-    .contenu_a_propos_de_moi {
+    .index_menu_left h2 {
         font-size: 20px;
     }
 
