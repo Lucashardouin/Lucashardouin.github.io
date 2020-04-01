@@ -9,7 +9,8 @@ hr {
     border: none;
 }
 
-h1, h2  {
+h1,
+h2 {
     margin: 0 auto;
 }
 
@@ -51,14 +52,6 @@ h5  {
     flex-direction: column;
 }
 
-.cell_1 {
-    padding-top: 1em;
-}
-
-.cell_2 h4 {
-    margin-top: 1em;
-}
-
 .index_menu_container .index_menu_left .photo {
     height: 300px;
     justify-content: center;
@@ -95,7 +88,7 @@ h5  {
     list-style: none;
 }
 
-.a_propos_de_moi {
+.index_menu_left h2 {
     height: 70px;
     background-color: #404040;
     color: #FECA08;
@@ -125,55 +118,38 @@ h5  {
 .contenu_loisirs {
     display: flex;
     height: 250px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #FECA08;
 }
 
 .fas {
     color: #404040;
-
 }
 
 .yellow {
     color: #FECA08;
 }
 
-.fa-swimmer {
-    top: 100px;
-    margin-left: 50px;
-    font-size: 70px;
+.icone_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #404040 ;
     border-radius: 50%;
-    line-height: 80px;
     width: 80px;
+    height: 80px;
     overflow: hidden;
 }
 
-.fa-biking {
-    font-size: 65px;
-    border: 2px solid #404040 ;
-    border-radius: 50%;
-    line-height: 80px;
-    width: 80px;
-    overflow: hidden;
-}
-
-.fa-table-tennis {
-    margin-right: 50px;
+.icone_loisir {
     font-size: 70px;
-    border: 2px solid #404040 ;
-    border-radius: 50%;
-    line-height: 80px;
-    width: 80px;
-    overflow: hidden;
 }
 
 .index_menu_right .presentation {
     height: 230px;
     padding:70px 120px 0px 120px;
 }
-
 
 #prenom {
     color: #FECA08;
@@ -185,7 +161,7 @@ h5  {
     font-size: 55px;
 }
 
-#metier {
+.presentation h2 {
     font-size: 35px;
 }
 
@@ -197,10 +173,8 @@ h5  {
     margin-top: 0px;
 }
 
-
-
-.formation {
-    height: 50px;
+.titre {
+    height: 70px;
     display: flex;
     margin-left: 85px;
     padding-top: 50px;
@@ -208,11 +182,11 @@ h5  {
     margin-bottom: 1em;
 }
 
-.formation i {
+.titre i {
     font-size: 2em;
 }
 
-.formation h3 {
+.titre h3 {
     margin-left: 1em;
     text-align: center;
     display: flex;
@@ -226,28 +200,6 @@ h5  {
 
 .fa-circle {
     font-size: 0.4em;
-}
-
-
-.experience_professionnelle {
-    height: 70px;
-    display: flex;
-    margin-left: 85px;
-    padding-top: 90px;
-    border-bottom: 2px solid #FECA08;
-    margin-bottom: 1em;
-}
-
-.experience_professionnelle h3 {
-    margin-left: 1em;
-    text-align: center;
-    display: flex;
-    padding-top: 35px;
-}
-
-.experience_professionnelle i {
-    font-size: 2em;
-    padding-top: 22px;
 }
 
 table {
@@ -274,25 +226,6 @@ tr td:last-child {
     vertical-align: top;
 }
 
-.recommandations {
-    display: flex;
-    height: 70px;
-    margin-left: 85px;
-    padding-top: 90px;
-    border-bottom: 2px solid #FECA08;
-    margin-bottom: 1em;
-}
-
-.recommandations h3 {
-    margin-left: 1em;
-    padding-top: 35px;
-}
-
-.recommandations i {
-    font-size: 2em;
-    padding-top: 20px;
-}
-
 .contenu_recommandations {
     line-height: 140%;
 }
@@ -313,27 +246,27 @@ tr td:last-child {
     .index_menu_right {
         height: 2050px;
     }
+
     .a_propos_de_moi {
         font-size: 20px;
     }
-    .contact {
+
+    .index_menu_left h2 {
         font-size: 25px;
     }
+
     .liste_1 {
         padding-left: 20px;
     }
-    .loisirs {
-        font-size: 25px;
-    }
-    .formation {
+
+    .titre {
         margin-left: 10px;
     }
-    .experience_professionnelle {
-        margin-left: 10px;
+
+    .icone_loisir {
+        font-size: 60px;
     }
-    .recommandations {
-        margin-left: 10px;
-    }
+
     table {
         margin-left: 10px;
         width: 90%;
@@ -346,49 +279,56 @@ tr td:last-child {
     and (max-width: 768px) {
     .index_menu_left {
         width: 30%;
+        height: 1700px;
     }
+
     .index_menu_right {
         width: 70%;
+        height: 1700px;
     }
-    .formation {
+
+    .titre {
         margin-left: 10px;
         font-size: 20px;
     }
+
     td {
         padding-left: 0px;
         font-size: 17px;
     }
+
     table {
         margin-left: 10px;
     }
+
     .liste_1 {
         padding-left: 5px;
         font-size: 17px;
     }
-    .experience_professionnelle {
-        margin-left: 10px;
-        font-size: 25px;
-    }
+
     .index_menu_right .presentation {
         padding-left: 10px;
     }
+
     #prenom,
     #nom {
         font-size: 25px;
     }
-    #metier,
-    .contenu_a_propos_de_moi,
-    .contact,
-    .a_propos_de_moi,
-    .loisirs {
+
+    .index_menu_left h2,
+    .contenu_a_propos_de_moi {
         font-size: 20px;
     }
-    .recommandations{
-        margin-left: 10px;
+
+    .contenu_a_propos_de_moi {
+        font-size: 20px;
+        height: 20%;
     }
-    .contenu_loisirs {
-        flex-direction: column;
+
+    .icone_loisir {
+        font-size: 60px;
     }
+
     .index_menu_container .index_menu_left .photo img {
         width: 150px;
         height: 150px;
@@ -402,49 +342,64 @@ tr td:last-child {
     .index_menu_container  {
         flex-direction: column;
     }
+
     .index_menu_left {
         width: 100%;
         height: 90%;
     }
+
     .index_menu_right {
         width: 100%;
     }
+
     .contenu_a_propos_de_moi {
         height: 100%;
     }
-    .contenu_loisirs {
+
+    .contenu_loisirs,
+    .contenu_contact {
         height: 10%;
     }
-    .formation {
+
+    .titre {
         margin-left: 5px;
         padding-top: 5px;
         margin-bottom: 0.5em;
     }
-    .formation i  {
+
+    .yellow {
+        padding-top: 40px !important ; 
+    }
+
+    tr td:nth-child(2n) {
+        width: 20%;
+    }
+
+    tr td:last-child {
+        width: 76%;
+    }
+
+    .titre i {
         font-size: 1.5em;
         height: 50%;
         padding-top: 10px;
     }
-    .formation h3  {
+
+    .titre h3 {
         margin-left: 1em;
+        padding-top: 40px;
     }
+
+    .experience_pro{
+        padding-top: 20px !important;
+    }
+
     td {
         font-size: 15px;
     }
+
     table {
         margin-left: 5px;
         width: 90%;
-    }
-    .experience_professionnelle h3 {
-        height: 100%;
-    }
-    .experience_professionnelle {
-        height: 5%;
-        margin-bottom: 0px;
-    }
-    .experience_professionnelle i {
-        height: 50%;
-        font-size: 1.5em;
-        padding-top: 50px;
     }
 }
